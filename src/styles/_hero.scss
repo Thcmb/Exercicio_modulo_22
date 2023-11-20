@@ -1,0 +1,44 @@
+.hero {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-image: url(../images/istockphoto-1221832287-2048x2048.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: ' ';
+        opacity: .7;
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}

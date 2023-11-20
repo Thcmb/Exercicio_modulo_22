@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>Olá</h1>
+<header class="hero">
+    <div class="container">
+        <p class="hero__text">
+            O aniversário de Thiago está chegando, faltam: <span id="contador"></span>
+        </p>
+        <div class="infos-bar">
+            <ul class="infos-bar__infos">
+                <li class="infos-bar__infos__item">
+                    <b>Localização</b>
+                    Nova Friburgo - Rio de janeiro
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Quando</b>
+                    11/10/2024 ás 18hrs
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Faixa etária</b>
+                    Acima de 18 anos
+                </li>
+            </ul>
+            <a href="#" class="button button--primary">
+                Confirme sua presença
+            </a>
+        </div>
+    </div>
+</header>
+<section class="event event--local">
+    <div class="container" data-aos="fade-right">
+        <div class="event__details">
+            <h2 class="event__details__title">Local</h2>
+            <p class="event__details__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam, reiciendis sit asperiores minus doloremque nemo eligendi dolore nostrum quas, officiis deleniti sint cum! Et asperiores repellendus animi tempore reiciendis.
+            </p>
+        </div>
+        <img class="event__image" src="./images/brussels-262972_1280.jpg" alt="`Praça">
+    </div>
+</section>
+<section class="event event--atracoes event--image-left">
+    <div class="container" data-aos="fade-left">
+        <div class="event__details">
+            <h2 class="event__details__title">Atrações</h2>
+            <p class="event__details__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam, reiciendis sit asperiores minus doloremque nemo eligendi dolore nostrum quas, officiis deleniti sint cum! Et asperiores repellendus animi tempore reiciendis.
+            </p>
+        </div>
+        <img class="event__image" src="./images/audience-1853662_1280.jpg" alt="`Festa">
+    </div>
+</section>
+<section class="event event--comidas">
+    <div class="container" data-aos="fade-right">
+        <div class="event__details">
+            <h2 class="event__details__title">Comidas</h2>
+            <p class="event__details__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam, reiciendis sit asperiores minus doloremque nemo eligendi dolore nostrum quas, officiis deleniti sint cum! Et asperiores repellendus animi tempore reiciendis.
+            </p>
+        </div>
+        <img class="event__image" src="./images/events-2609526_1280.jpg" alt="`Buffet">
+    </div>
+</section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
